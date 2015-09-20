@@ -11,11 +11,24 @@
       </ul>
     </div>
   <% end %>
-  
-  名前:
-  <%= f.text_field :name %>
-
-  内容:
-  <%= f.text_field :body %>
-  <%= f.submit class: "btn btn-sm btn-primary" %>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        名前:<br>
+        <%= f.text_field :name %>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        内容:<br>
+        <%= f.text_area :body , :size=> "20x2" %>
+      </div>
+      <div class="col-xs-12 col-sm-2">
+        年齢:<br>
+        <%= f.text_field :age %>
+      </div>
+      <div class="col-xs-12 col-sm-2">
+        <br>
+        <%= f.submit class: "btn btn-sm btn-primary" %>
+      </div>
+    </div>
+  </div>  
 <% end %>
